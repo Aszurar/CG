@@ -18,7 +18,7 @@ ___
 
 ___
 
-<div align="center" ><img src="https://media.giphy.com/media/mBDxKARXFYHTP3tKy1/giphy-downsized.gif" width="600"></div>
+<div align="center" ><img src="" width="600"></div>
 
 ___
 
@@ -50,13 +50,13 @@ ___
   
 ```
   - Baixar a extensão Live Server do vscode:
-  <img src="https://i.imgur.com/yhSpTEV.png" width="600">
+  <img src="" width="600">
   
   - Abrir a pasta do projeto no vscode e abrir o arquivo **index.html** e clicar em Go Live(opção localizada no canto inferior direito):
-  <img src="https://i.imgur.com/hWiLUvn.png" width="600">
+  <img src="" width="600">
   
   - Com isso, seu navegador padrão abrirá a página automaticamente:
-  <img src="https://i.imgur.com/k6J8Q7o.png" width="600">
+  <img src="" width="600">
   
 
 ___
