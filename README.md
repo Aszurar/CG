@@ -85,7 +85,7 @@ ___
   
   - Para resolver isso, por meio de um pouco de pesquisa, foi necessário exportar a versão mais recente do **MESA_GL_VERSION_OVERRIDE**, que é o drive de dispositivos e de implementação do OPENGL, Vulkan... mencionado acima, na parte de instalação.
     
-  -- Assim, é necessário que antes do processo de compilação e execução seja feita essa exportação assim:
+   - Assim, é necessário que antes do processo de compilação e execução seja feita essa exportação assim:
     ```bash
       export MESA_GL_VERSION_OVERRIDE=3.3
     ```
