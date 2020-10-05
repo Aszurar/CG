@@ -1,7 +1,7 @@
-# AniWorld | Streaming de Anime
-Uma página inicial que seria de algum streaming de anime, eu e meu amigo Pedro fizemos simplesmente para praticar o CSS, o visual e a criatividade
+# Atividade Pratica 1 | Compilando e Executando um Programa OpenGL Moderno
+GDSCO0051 - Introdução à Computação Gráfica - Turmas 03/04 - 2020.1
 ___
-<h2 align="center">AniWorld</h2>
+<h2 align="center">Atividade Pratica 1: Triangulo Colorido(OpenGL Moderno)</h2>
 
 ___
 
@@ -24,7 +24,8 @@ ___
 
 ## :information_source: Sobre
 
-O projeto é um **AniWorld** é uma página inicial de um straming de Animes feito por mim e meu amigo(Pedro), a gente simpelsmente queria praticar nosso CSS e HTML, além disso também usar o Bootstrap, algo que eu nunca tinha visto.
+A atividade consiste em compilar e executar o programa fornecido, 01_hello_world_gl -modern_opengl Durante a compilação alguns warnings poderão aparecer na tela. Uma vez compilado, ao ser executado, o programa deverá apresentar uma janela contendo um triângulo colorido.
+com sucesso, o programa
 ___
 ## :interrobang: Motivo
 
