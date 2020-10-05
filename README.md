@@ -12,7 +12,7 @@ ___
   <a href="#information_source-sobre">Sobre</a>&nbsp;|&nbsp;
   <a href="#interrobang-motivo">Motivo</a>&nbsp;|&nbsp;
   <a href="#seedling-requisitos-mínimos">Requisitos</a>&nbsp;|&nbsp;
-  <a href="#rocket-compilando-e-executando:">Execução</a>&nbsp;|&nbsp;
+  <a href="#rocket-compilando-e-executando">Execução</a>&nbsp;|&nbsp;
   <a href="#package-como-baixar-o-projeto">Baixar</a>&nbsp;
 </h3>
 
