@@ -96,22 +96,16 @@ ___
    --Execução:
       <img src="https://i.imgur.com/zXXZHGP.png">
 ___ 
-## :package: Como baixar o projeto
+## :package: Como baixar e executar o projeto:
 
   - Clonar o projeto:
 ```bash
-  $ git clone https://github.com/Aszurar/SitePessoal.git
+  $ git clone https://github.com/Aszurar/CG.git
   
 ```
-  - Baixar a extensão Live Server do vscode:
-  <img src="" width="600">
+  - Realize todas instalações acima, da aba de Requisitos.
   
-  - Abrir a pasta do projeto no vscode e abrir o arquivo **index.html** e clicar em Go Live(opção localizada no canto inferior direito):
-  <img src="" width="600">
-  
-  - Com isso, seu navegador padrão abrirá a página automaticamente:
-  <img src="" width="600">
-  
+  - Entre na pasta modern_opengl e siga os passos da aba de Compilação e Execução
 
 ___
 Desenvolvido por :star2: Lucas de Lima Martins de Souza.
