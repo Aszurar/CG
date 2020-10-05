@@ -66,14 +66,19 @@ sudo apt-get install binutils-gold;
 ___
 ## :rocket: Compilando e Executando:
 - Compilação(utulizando o temrinal na mesma pasta que o programa) pode ser e 2 maneiras:
-  ```bash
-  gcc main.c -lglut -lGLU -lGL -I. -o cgprog
-  ```
+   ```bash
+    gcc main.c -lglut -lGLU -lGL -I. -o cgprog
+   ```
   ou pode ser compilado também como:
-```bash
-  gcc -Wall -Wextra -Wpedantic -std=c99 -O0 -g3 main.c -lglut -lGLU -lGL -o cgprog
-```
-
+  ```bash
+    gcc -Wall -Wextra -Wpedantic -std=c99 -O0 -g3 main.c -lglut -lGLU -lGL -o cgprog
+  ```
+ - Execução(Na pasta do projeto, digite no terminal):
+   ```bash
+   ./cgprog
+    ```
+ - :alert: No entanto, nós queremos um triângulo colorido, mas caso faça somente os comandos acima, resultará em um triângulo branco, como a figura abaixo:
+  <img src="https://i.imgur.com/BJfyQ3R.png">
 ___
 ## :package: Como baixar o projeto
 
