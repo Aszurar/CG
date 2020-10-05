@@ -28,12 +28,22 @@ A atividade consiste em compilar e executar o programa fornecido, 01_hello_world
 com sucesso, o programa
 ___
 ## :interrobang: Motivo
+ - Verificar se o ambiente de desenvolvimento em OpenGL 3.3 está corretamente configurado nos computadores dos alunos;
+ - Familizarizar os alunos com a estrutura de um programa OpenGL moderno.
 
-O Intuito é praticar o HTML e CSS, além de explorar o Bootstrap, que era algo que eu não conhecia. Além disso, queria praticar alguns conhecimentos obtidos no **Bootcamp LaunchBase da Rocketseat**
-
-## :seedling: Requisitos Mínimos
-
-Simplesmente ter o VScode e a extensão live share para visualizar o index.html.
+## :seedling: Requisitos Mínimos - Instalação das bibliotecas do OpenGL e Configurações:
+- Atualização das listas de pacotes dos repositórios para obter informações sobre as versões mais recentes dos pacotes e suas dependencias
+ ```c
+ sudo apt-get update;
+ ```
+sudo apt-get install freeglut3; 
+sudo apt-get install freeglut3-dev; 
+sudo apt-get install binutils-gold; 
+sudo apt-get install g++ cmake; 
+sudo apt-get install libglew-dev; 
+sudo apt-get install g++;  
+sudo apt-get install mesa-common-dev; 
+sudo apt-get install libglew1.5-dev libglm-dev
 ___
 ## :rocket: Tecnologias Utilizadas 
 
