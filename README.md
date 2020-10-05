@@ -64,9 +64,12 @@ sudo apt-get install mesa-common-dev;
 sudo apt-get install binutils-gold; 
 ```
 ___
-## :rocket: Tecnologias Utilizadas 
+## :rocket: Compilando e Executando:
 
-O projeto foi desenvolvido utilizando as seguintes tecnologias
+- Compilação:
+```bash
+gcc lucas.c -lglut -lGLU -lGL -I. -o cgprog
+```
 
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
