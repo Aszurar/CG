@@ -83,7 +83,7 @@ ___
   --Execução
      <img src="https://i.imgur.com/BJfyQ3R.png">
   
-  - Para resolver isso, por meio de um pouco de pesquisa, foi necessário exportar a versão mais recente do **MESA_GL_VERSION_OVERRIDE**, que é o drive de dispositivos e de implementação do OPENGL, Vulkan... mencionado acima, na parte de instalação.
+  - Para resolver isso, por meio de um pouco de pesquisa, foi necessário **exportar a versão mais recente do MESA_GL_VERSION_OVERRIDE**, que é o drive de dispositivos e de implementação do OPENGL, Vulkan... mencionado acima, na parte de instalação.
     
   - Assim, é necessário que antes do processo de compilação e execução seja feita essa exportação assim no terminal:
     ```bash
@@ -101,7 +101,6 @@ ___
   - Clonar o projeto:
 ```bash
   $ git clone https://github.com/Aszurar/CG.git
-  
 ```
   - Realize todas instalações acima, da aba de Requisitos.
   
