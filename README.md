@@ -12,7 +12,7 @@ ___
   <a href="#information_source-sobre">Sobre</a>&nbsp;|&nbsp;
   <a href="#interrobang-motivo">Motivo</a>&nbsp;|&nbsp;
   <a href="#seedling-requisitos-mínimos">Requisitos</a>&nbsp;|&nbsp;
-  <a href="#rocket-tecnologias-utilizadas">Execução</a>&nbsp;|&nbsp;
+  <a href="#rocket-compilando-e-executando:">Execução</a>&nbsp;|&nbsp;
   <a href="#package-como-baixar-o-projeto">Baixar</a>&nbsp;
 </h3>
 
@@ -85,10 +85,13 @@ ___
   
   - Para resolver isso, por meio de um pouco de pesquisa, foi necessário exportar a versão mais recente do **MESA_GL_VERSION_OVERRIDE**, que é o drive de dispositivos e de implementação do OPENGL, Vulkan... mencionado acima, na parte de instalação.
     
-  - Assim, é necessário que antes do processo de compilação e execução seja feita essa exportação assim:
+  - Assim, é necessário que antes do processo de compilação e execução seja feita essa exportação assim no terminal:
     ```bash
       export MESA_GL_VERSION_OVERRIDE=3.3
     ```
+  - Após isso, basta utilizar um dos métodos de compilar acima e executar normalmente como a sequência abaixo:
+    --Exportação e Compilação:
+      <img src="https://i.imgur.com/56inU1Q.png">
 ___
 ## :package: Como baixar o projeto
 
