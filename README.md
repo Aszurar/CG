@@ -90,9 +90,12 @@ ___
       export MESA_GL_VERSION_OVERRIDE=3.3
     ```
   - Após isso, basta utilizar um dos métodos de compilar acima e executar normalmente como a sequência abaixo:
-    --Exportação e Compilação:
+    
+   --Exportação e Compilação:
       <img src="https://i.imgur.com/56inU1Q.png">
-___
+   --Execução:
+      <img src="https://i.imgur.com/zXXZHGP.png">
+___ 
 ## :package: Como baixar o projeto
 
   - Clonar o projeto:
