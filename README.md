@@ -1,5 +1,5 @@
 # Atividade Pratica 1 | Compilando e Executando um Programa OpenGL Moderno
-GDSCO0051 - Introdução à Computação Gráfica - Turmas 03/04 - 2020.1
+**GDSCO0051 - Introdução à Computação Gráfica** - Turmas 03/04 - 2020.1
 ___
 <h2 align="center">Atividade Pratica 1: Triangulo Colorido(OpenGL Moderno)</h2>
 
@@ -36,8 +36,14 @@ ___
  ```c
  sudo apt-get update;
  ```
+- Instação da biblioteca GLUT, que é uma biblioteca de funcionalidades para OpenGL como criação/controle de janelas e tratamento de eventos de dispositivos de entrada e saída, o segundo comando(_freeglut3-dev_), instala a biblioteca com ferramentas para desenvolvedor: 
+```c
 sudo apt-get install freeglut3; 
+```
+```c
 sudo apt-get install freeglut3-dev; 
+```
+
 sudo apt-get install binutils-gold; 
 sudo apt-get install g++ cmake; 
 sudo apt-get install libglew-dev; 
