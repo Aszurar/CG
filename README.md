@@ -43,13 +43,26 @@ sudo apt-get install freeglut3;
 ```c
 sudo apt-get install freeglut3-dev; 
 ```
-
-sudo apt-get install binutils-gold; 
+- Instalação do CMake, que é uma ferramenta que permite a geração automática de scripts de construção de aplicação em diferentes plataformas
+```c
 sudo apt-get install g++ cmake; 
+```
+- Instalação da biblioteca GLEW como ferramenta de desenvolvedor, que é uma biblioteca de carregamento de extensões C/C++. O GLEW fornece mecanismos eficientes de tempo de execução para determinar quais extensões OpenGL são suportadas na plataforma de destino:
+```c
 sudo apt-get install libglew-dev; 
+```
+- Intalação do G++, o compilador de C++:
+```c
 sudo apt-get install g++;  
-sudo apt-get install mesa-common-dev; 
-sudo apt-get install libglew1.5-dev libglm-dev
+```
+- Instalação do Mesa, que é um driver de dispositivo e implementação de software do OpenGL, Vulkan e de outras especificações.
+```c
+sudo apt-get install mesa-common-dev;
+```
+ - (opcional) Instalação do Gold, que é um vinculador(linker) de arquivos especial para arquivos grandes em C++
+```c 
+sudo apt-get install binutils-gold; 
+```
 ___
 ## :rocket: Tecnologias Utilizadas 
 
