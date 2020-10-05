@@ -77,11 +77,17 @@ ___
    ```bash
    ./cgprog
     ```
-  - :warning: No entanto, nós queremos um triângulo colorido, mas caso faça somente os comandos acima, resultará em um triângulo branco, como a figura abaixo:
+  - :warning:  **No entanto, nós queremos um triângulo colorido, mas caso faça somente os comandos acima, resultará em um triângulo branco**, como a sequência abaixo:
   --Compilação:
-  <img src="https://i.imgur.com/eHO5pAR.png">
+    <img src="https://i.imgur.com/eHO5pAR.png">
   --Execução
-  <img src="https://i.imgur.com/BJfyQ3R.png">
+     <img src="https://i.imgur.com/BJfyQ3R.png">
+  
+  - Para resolver isso, por meio de um pouco de pesquisa, foi necessário exportar a versão mais recente do **MESA_GL_VERSION_OVERRIDE**, que é o drive de dispositivos e de implementação do OPENGL, Vulkan... mencionado acima, na parte de instalação.
+    -- Assim, é necessário que antes do processo de compilação e execução seja feita essa exportação assim:
+          ```bash
+            export MESA_GL_VERSION_OVERRIDE=3.3
+          ```
 ___
 ## :package: Como baixar o projeto
 
