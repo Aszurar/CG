@@ -47,9 +47,12 @@ sudo apt-get install freeglut3-dev;
 ```c
 sudo apt-get install g++ cmake; 
 ```
-- Instalação da biblioteca GLEW como ferramenta de desenvolvedor, que é uma biblioteca de carregamento de extensões C/C++. O GLEW fornece mecanismos eficientes de tempo de execução para determinar quais extensões OpenGL são suportadas na plataforma de destino:
+- Instalação da biblioteca GLEW como ferramenta de desenvolvedor, que é uma biblioteca de carregamento de extensões C/C++. O GLEW fornece mecanismos eficientes de tempo de execução para determinar quais extensões OpenGL são suportadas na plataforma de destino(O 2º comando, ta instalando sua versão 1.5):
 ```c
 sudo apt-get install libglew-dev; 
+```
+```c
+sudo apt-get install libglew1.5-dev libglm-dev
 ```
 - Intalação do G++, o compilador de C++:
 ```c
