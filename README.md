@@ -66,10 +66,13 @@ sudo apt-get install binutils-gold;
 ___
 ## :rocket: Compilando e Executando:
 - Compilação(utulizando o temrinal na mesma pasta que o programa) pode ser e 2 maneiras:
-  1.
   ```bash
   gcc main.c -lglut -lGLU -lGL -I. -o cgprog
   ```
+  ou pode ser compilado também como:
+```bash
+  gcc -Wall -Wextra -Wpedantic -std=c99 -O0 -g3 main.c -lglut -lGLU -lGL -o cgprog
+```
 
 ___
 ## :package: Como baixar o projeto
