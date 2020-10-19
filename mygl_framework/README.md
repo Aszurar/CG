@@ -1,4 +1,4 @@
-# Atividade Pratica 2 | Triângulos gerados por meio do uso de algoritmos de rasterização do Algoritmo do Ponto Médio.
+# Atividade Prática 2 | Triângulos gerados por meio do uso de algoritmos de rasterização do Algoritmo do Ponto Médio.
 **GDSCO0051 - Introdução à Computação Gráfica** - Turmas 03/04 - 2020.1
 
 **Alunos:**
