@@ -98,6 +98,7 @@ No Algoritmo do Ponto Médio as coordenadas de Y estão em função de X. Dessa 
 No 2º Octante é necessário trocar as coordenadas em X com as coordenadas em Y. Assim o Algoritmo do Ponto Médio ficará em função do Y.
 
 Dado que a reta de entrada seja a seguinte:
+
 <img src="https://i.imgur.com/KZ4M2OT.png" width="600">
 Reta 1
 
@@ -112,6 +113,7 @@ Xf = Yf
 Yf = aux
 ```
 Reta resultante após a alteração:
+
 <img src="https://i.imgur.com/Rc4znyo.png" width="600">
 Reta 2
 
