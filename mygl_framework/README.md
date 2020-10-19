@@ -23,7 +23,7 @@ ___
 
 ___
 
-<div align="center" ><img src="https://media.giphy.com/media/zn2nzYyEzdJAB3OShO/giphy.gif" width="500"></div>
+<div align="center" ><img src="https://media.giphy.com/media/u1zWOBaG7p0BSRTdZ4/giphy.gif" width="500"></div>
 
 ___
 
