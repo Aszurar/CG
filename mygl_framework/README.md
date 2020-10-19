@@ -150,9 +150,9 @@ No 4º Octante os valores das coordenadas estariam espelhando os do modelo do Al
   - O 2º e o 6º Octantes são semelhantes, a única diferença será a inversão dos pontos finais com os iniciais no 6º Octante.
     O mesmo vale para:
 
-    - 1º com o 5º
-    - 3º com o 7º
-    - 4º com o 8º
+    - 1º com o 5º octante
+    - 3º com o 7º octante
+    - 4º com o 8º octante
 
 Portanto, para construir o Algoritmo, foi necessário implementar as modificações do 1º ao 4º quadrante, resolvendo assim por meio da simetria entre os demais quadrantes. 
 ___
