@@ -154,7 +154,32 @@ No 4º Octante os valores das coordenadas estariam espelhando os do modelo do Al
     - 4º com o 8º octante
 
 Portanto, para construir o Algoritmo, foi necessário implementar as modificações do 1º ao 4º quadrante, resolvendo assim por meio da simetria entre os demais quadrantes. 
-___
+
+**A Interpolação Linear de Cores**
+Não foi possível realizar a interpolação Linear das cores totalmente efetiva. Na lógica utilizada, há o funcionamento somente com a entrada de vértices de triângulos que não possuam coordenadas tão distantes umas das outras. 
+
+**Falha**: 
+ - Caso a entrada na entrada dos 3 vértices do Triângulo, algum deles possua alguma coordenada muito distante das coordenadas dos demais vértices, as linhas rasterizadas ligadas à esse vértice não serão coloridas, ficaram por padrão pretas. 
+ - Esse problema ocorre somente no uso da Interpolação Linear de Cores,  o projeto gera os triângulos normalmente.
+ - Quando não se usa a interpolação e configura a cor das linhas, qualquer triângulo será rasterizado colorido na cor configurada normalmente.
+
+**Lógica Utilizada:**
+ - Calcula-se a variação(deltas) entre das coordenadas x e y dos pontos
+ - Caso o delta em x seja maior que 0, é realizado a diferença entre as 2 cores red, green e blue.
+ - Cada diferença dessas é divididada pelo delta em x.
+ - Caso o delta em X não seja maior que zero, então é feito o mesmo procedimento mas com o delta em y.
+	
+```c
+	if(dx>0){
+		rP = (color2.red - color1.red)/dx;
+		gP = (color2.green - color1.green)/dx;
+		bP = (color2.blue - color1.blue)/dx;
+	}else if(dy>0){
+		rP = (color2.red - color1.red)/dy;
+		gP = (color2.green - color1.green)/dy;
+		bP = (color2.blue - color1.blue)/dy;
+	}
+```
 
 
 ```c
