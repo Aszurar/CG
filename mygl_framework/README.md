@@ -11,7 +11,6 @@ ___
 
 
 
-
 <h3 align="center">
   <a href="#information_source-objetivo">Objetivo</a>&nbsp;|&nbsp;
   <a href="#interrobang-estratégias">Estratégias</a>&nbsp;|&nbsp;
