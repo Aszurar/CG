@@ -168,6 +168,9 @@ Basta chamar o DrawnLine 3 vezes, e relacionar os 3 pontos(vértices do triãngu
   <img src="https://media.discordapp.net/attachments/748604533827174534/767519565844054046/Sem_titulo.png" width=600>
 
 ## :seedling: Resultados:
+- Triângulo com a Interpolação Linear de Cores:
+<img src="https://i.imgur.com/TfYrdDP.png">
+
 - Triângulo Escaleno:
   <img src="https://i.imgur.com/0FEKgOy.png">
 
@@ -181,11 +184,12 @@ Basta chamar o DrawnLine 3 vezes, e relacionar os 3 pontos(vértices do triãngu
 **Dificultades**
     
 - A abstração para sair do campo da lógica da algebra vetorial para a lógica da programação foi muito dificil.
-- Os documentos passados não ajudaram em colaborar com a lógica do trabalho. Com isso, o mal entendimento dos materiais passados, a construção da lógica do trabalho tornou-se muito complexa.
+- Os documentos passados não ajudaram em colaborar com a lógica do trabalho, na verdade, geraram mais dúvidas sobre o assunto. Com isso, o mal entendimento dos materiais passados, a construção da lógica do trabalho tornou-se muito complexa.
 - Essa complexidade aumentou mais pelo fato de que os sites buscados sobre o assunto também ou eram escassos ou difícies de se entender.
 
 **Melhorias**
 - Acredita-se que os documentos de referências passados poderiam ser mais didáticos. 
+- Mais exemplos práticos na aula, mais praticidade no geral em conjunto com os alunos. Pois é muito difícil encaixar toda teoria passada em uma aula somente de slides aprensentando conceitos em um projeto prático com a lógica de programação.
 
 ## :seedling: Requisitos Mínimos - Instalação das bibliotecas do OpenGL e Configurações:
 - Atualização das listas de pacotes dos repositórios para obter informações sobre as versões mais recentes dos pacotes e suas dependencias
