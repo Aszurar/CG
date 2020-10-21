@@ -1,11 +1,11 @@
-# Atividade Prática 2 | Triângulos gerados por meio do uso de algoritmos de rasterização do Algoritmo do Ponto Médio.
+# Atividade Prática 2 | Triângulos gerados por meio do uso do Algoritmo do Ponto Médio.
 **GDSCO0051 - Introdução à Computação Gráfica** - Turmas 03/04 - 2020.1
 
 **Alunos:**
  - Lucas de Lima Martins de Souza.
  - Allef Brenno Gomes de Lima.
 ___
-<h2 align="center">Triângulos gerados por meio de algoritmos da rasterização do Algorítmo do ponto</h2>
+<h2 align="center">Triângulos gerados por meio de algoritmo de rasterização do Ponto Médio</h2>
 
 ___
 
@@ -28,18 +28,13 @@ ___
 
 ## :information_source: Sobre
 
-A atividade consiste em implementar algoritmos de rasterização de linhas, nesse caso em específico baseado no Algoritmo do ponto médio para a criação de triângulos a partir de pares de coordenadas (x, y) passadas. 
+A atividade consiste em implementar algoritmos de rasterização de linhas, nesse caso em específico baseado no Algoritmo do Ponto Médio para a criação de triângulos a partir dos vértices(x, y) dos trigângulos passados. 
 
 Além disso, realizar as alterações necessárias para que seja possível rasterizar retas em qualquer direção/octante, já que no Algoritmo do Ponto Médio seria focado somente no 1º Octante.
 
 ___
 ## :interrobang: Estratégias
-Uma vez compilado, ao ser executado, o programa deverá apresentar uma janela contendo um triângulo com base nos números dos vértices do triângulo da função:
-  ```c
-   MyGlDraw(void)
-   ```
-
-Além disso, as cores RGBA são definidas em um struct, assim como usamos uma struct Point para auxiliar na passagem dos pontos nas funções:
+É utilizado structs para definição das cores RGBA e dos pontos.
 
 ```c
 struct RGBA{
@@ -55,20 +50,18 @@ struct Point{
 };
 ```
 
-As funções requeridas no trabalho também são implementas:
+**Funções implementadas:**
 ```c
 PutPixel(int x, int y, struct RGBA color);
 ```
 A função PutPixel rasteriza um ponto na memória de vídeo recebendo como parâmetros as coordenadas (x,y) do pixel na tela e sua cor (RGBA).
-Utilizamos um Struct para passar a cor RGBA.
 ___
 ```c
 DrawLine(struct Point pontoA,struct Point pontoB, struct RGBA color);
 ```
 Responsável por rasterizar uma linha na tela, recebendo como parâmetros as coordenadas dos seus vértices inicial e final e as cores (no formato RGBA) de cada vértice. 
 
-O algoritmo utilizado é baseado no Algoritmo do Ponto Médio, porém esse algoritmo só consegue desenhar retas no 1º Octante do plano cartesiano. Assim algumas modificações devem ser realizadas para que seja possível a rasterização de retas em qualquer posição do plano cartesiano.
-As tuplas de vértices iniciais e finais e cor RGBA são passados como structs.
+O algoritmo utilizado é baseado no Algoritmo do Ponto Médio, porém esse algoritmo só consegue desenhar retas no 1º Octante do plano cartesiano. A partir disso, modificações devem ser realizadas para que seja possível a rasterização de retas em qualquer posição do plano cartesiano.
 
 **Restrições dos 8 Octantes**
 
@@ -77,7 +70,7 @@ Em cada Octante há suas regras/limitantes que devem ser seguidas para conseguir
 
 <img src="https://media.discordapp.net/attachments/748604533827174534/767530137641287690/49b4a-octantes.png" width="800">
 
-A função CheckLine:
+**A função CheckLine:**
 ```c
 CheckLine(struct Point pontoA,struct Point pontoB);
 ```
@@ -88,9 +81,9 @@ Exemplo:
 
 Pela imagem acima, temos que no 7º Octante o coeficiente angular(m) pode variar entre -1 e -∞(-1 > m > -∞) e outra restrição é que a coordenada y do ponto final é sempre menor que a coordenada y do ponto inicial(Y2 < Y1) 
 
-Com o Octante determinado, é necessário realizar operações específicas com a reta para que ela seja  de modo que independente do Octante em que ela esteja, ela seja rasterizada a partir do conceito do Algoritmo do Ponto Médio.
+Com o Octante determinado, é necessário realizar operações específicas com a reta para  que independente do Octante em que ela esteja, seja rasterizada a partir do conceito do Algoritmo do Ponto Médio.
 
-No Algoritmo do Ponto Médio as coordenadas de Y estão em função de X. Dessa forma:
+No Algoritmo do Ponto Médio as coordenadas de Y estão em função de X. Assim, as alterações que devem ser feitas:
 
 **Exemplo: 2º Octante**
 
@@ -129,10 +122,9 @@ No 4º Octante os valores das coordenadas estariam espelhando os do modelo do Al
 - 1º Alteração:
   - No Algoritmo do Ponto Médio(que é no 1º Octante) as coordenadas do X final sempre serão maiores que as coordenadas do X inicial.
 
-    Já que o 4º Octante é um espelhamento do 1º Octante, para manter a regra acima, é necessário que X final seja trocado pelo X inicial.
-    
+  - á que o 4º Octante é um espelhamento do 1º Octante, para manter a regra acima, é necessário que X final seja trocado pelo X inicial.
 
-    Após a 1º Alteração, essa será a Reta resultante:
+  - Após a 1º Alteração, essa será a Reta resultante:
    <img src="https://i.imgur.com/uPHW3MD.png" width="600">
 - 2º Alteração:
   
@@ -154,7 +146,7 @@ No 4º Octante os valores das coordenadas estariam espelhando os do modelo do Al
     - 3º com o 7º octante
     - 4º com o 8º octante
 
-Portanto, para construir o Algoritmo, foi necessário implementar as modificações do 1º ao 4º quadrante, resolvendo assim por meio da simetria entre os demais quadrantes. 
+Portanto, para construir o Algoritmo, foi necessário implementar as modificações do 1º ao 4º octantes,e com isso, resolver por meio da simetria entre os demais octantes. 
 
 **A Interpolação Linear de Cores**
 
