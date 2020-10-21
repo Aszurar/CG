@@ -123,6 +123,7 @@ Após essa transformação, a reta está moldada para ser calculada no Algoritmo
 No 4º Octante os valores das coordenadas estariam espelhando os do modelo do Algoritmo do Ponto Médio, pois este está no 1º Octante, um é o espelho do outro. Portante, 2 alterações serão feitas:
 
   Dado que essa seja a Reta inicial:
+  
   <img src="https://i.imgur.com/g5Q0BL4.png" width="600">
 
 - 1º Alteração:
@@ -167,6 +168,7 @@ Não foi possível realizar a interpolação Linear das cores totalmente efetiva
  - Calcula-se a variação(deltas) entre das coordenadas x e y dos pontos
  - Caso o delta em x seja maior que 0, é realizado a diferença entre as 2 cores red, green e blue.
  - Cada diferença dessas é divididada pelo delta em x.
+ - O valor final de cada divisão é guardado.
  - Caso o delta em X não seja maior que zero, então é feito o mesmo procedimento mas com o delta em y.
 	
 ```c
@@ -180,7 +182,7 @@ Não foi possível realizar a interpolação Linear das cores totalmente efetiva
 		bP = (color2.blue - color1.blue)/dy;
 	}
 ```
-
+ - Por fim esses valores são somados as cores RGBA.
 
 ```c
 DrawTriangle(struct Point pontoA,struct Point pontoB, struct RGBA color);
@@ -193,7 +195,11 @@ Basta chamar o DrawnLine 3 vezes, e relacionar os 3 pontos(vértices do triãngu
 
 ## :seedling: Resultados:
 - Triângulo com a Interpolação Linear de Cores:
-<img src="https://i.imgur.com/TfYrdDP.png">
+- Vértices escolhidos:
+ - A(100, 100)
+ - B(200, 300)
+ - C(300, 100)
+<img src="https://i.imgur.com/0gv2KUx.png">
 
 - Triângulo Escaleno:
   <img src="https://i.imgur.com/0FEKgOy.png">
