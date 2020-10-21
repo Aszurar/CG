@@ -267,6 +267,8 @@ ___
 - Acredita-se que os documentos de referências passados poderiam ser mais didáticos. 
 - Mais exemplos práticos na aula, mais praticidade no geral em conjunto com os alunos. Pois é muito difícil encaixar toda teoria passada em uma aula somente de slides aprensentando conceitos em um projeto prático com a lógica de programação.
 
+___
+
 ## :seedling: Requisitos Mínimos - Instalação das bibliotecas do OpenGL e Configurações:
 - Atualização das listas de pacotes dos repositórios para obter informações sobre as versões mais recentes dos pacotes e suas dependencias
  ```c
@@ -303,6 +305,7 @@ sudo apt-get install mesa-common-dev;
 sudo apt-get install binutils-gold; 
 ```
 ___
+
 ## :package: Baixar:
 
   - Clonar o projeto:
@@ -324,4 +327,5 @@ ___
    ./mygl
     ```
 ___
+
 Desenvolvido por :star2: Lucas de Lima Martins de Souza e :crown: Allef Brenno Gomes de Lima.
