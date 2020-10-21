@@ -204,6 +204,7 @@ Basta chamar o DrawnLine 3 vezes, e relacionar os 3 pontos(vértices do triãngu
  - 3º Ponto é o C(Vértice da direita)
   <img src="https://media.discordapp.net/attachments/748604533827174534/767519565844054046/Sem_titulo.png" width=600>
 
+___
 ## :seedling: Resultados:
 - Triângulo com a Interpolação Linear de Cores realizada com sucesso:
 - Vértices escolhidos:
@@ -211,6 +212,8 @@ Basta chamar o DrawnLine 3 vezes, e relacionar os 3 pontos(vértices do triãngu
  	- B(200, 300)
  	- C(300, 100)
 <img src="https://i.imgur.com/0gv2KUx.png">
+
+___
 
 - Triângulo com a falha da Interpolação Linear de Cores citada acima:
 - As linhas ligadas ao ponto C não são coloridas e ficam pretas.
@@ -220,13 +223,15 @@ Basta chamar o DrawnLine 3 vezes, e relacionar os 3 pontos(vértices do triãngu
  	- C(457, 465)
 <img src="https://i.imgur.com/gpHhUfs.png">
 
+___
+
 - O mesmo triângulo acima sem a Interpolação Linear de Cores:
 - Vértices escolhidos:
  	- A(100, 100)
  	- B(200, 300)
  	- C(457, 465)
 <img src="https://i.imgur.com/LC74mJs.png">
-
+___
 
 **Segue outros exemplos sem a interpolalação Linear de Cores:**
 - Triângulo Escaleno:
