@@ -228,19 +228,23 @@ ___
 <img src="https://i.imgur.com/LC74mJs.png">
 ___
 
-**Segue exeplos com a Interpolação Linear de Cores realizada com sucesso:
+**Segue exemplos com a Interpolação Linear de Cores realizada com sucesso:**
+
 ___
+
 - Vértices escolhidos:
  	- A(100, 200)
  	- B(200, 400)
  	- C(350, 350)
 <img src="https://i.imgur.com/d9u1nRm.png">
 ___
+
 - Vértices escolhidos:
- 	- A(200, 100)
+	- A(200, 100)
  	- B(200, 300)
  	- C(100, 300)
 <img src="https://i.imgur.com/1oRDZz4.png">
+___
 
 **Segue outros exemplos sem a Interpolação Linear de Cores:**
 - Triângulo Escaleno:
