@@ -190,10 +190,11 @@ Não foi possível realizar a interpolação Linear das cores totalmente efetiva
  ```
  
  **Motivo da falha**
+  - As cores por padrão são definidas com o valor 0.
   - O problema ocorre quando a distância entre algum vértice é grande. Pois assim, o delta(dx) do trecho do código acima assume um valor alto, enquanto que a diferença realizada no Numerador da divisões do trecho do código acima se torna um valor baixo, e essa divisão resulta em um valor entre 0 e 1.
   - O Resultado dessas divisões é guardado em varíaveis que são float.
   - No entando, as cores são valores inteiros, e quando ocorre a soma entre as cores e as variáveis que guardam o resultado da divisão(que são float), essas divisiões que são valores entre 0 e 1 tornam-se 0 nessa soma final.
-  - Por fim, a conversão da variável float em 0 configura a cor preta e a falha ocorre.
+  - Por fim, a conversão da variável float em 0 e como as cores são declaradas com o valor 0, então a soma final será 0 = 0 + 0 configurando assim a cor preta.
 
 ```c
 DrawTriangle(struct Point pontoA,struct Point pontoB, struct RGBA color);
@@ -233,7 +234,21 @@ ___
 <img src="https://i.imgur.com/LC74mJs.png">
 ___
 
-**Segue outros exemplos sem a interpolalação Linear de Cores:**
+**Segue exeplos com a Interpolação Linear de Cores realizada com sucesso:
+___
+- Vértices escolhidos:
+ 	- A(100, 200)
+ 	- B(200, 400)
+ 	- C(350, 350)
+<img src="https://i.imgur.com/d9u1nRm.png">
+___
+- Vértices escolhidos:
+ 	- A(200, 100)
+ 	- B(200, 300)
+ 	- C(100, 300)
+<img src="https://i.imgur.com/1oRDZz4.png">
+
+**Segue outros exemplos sem a Interpolação Linear de Cores:**
 - Triângulo Escaleno:
   <img src="https://i.imgur.com/0FEKgOy.png">
 
