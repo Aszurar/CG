@@ -2,8 +2,8 @@
 **GDSCO0051 - Introdução à Computação Gráfica** - Turmas 03/04 - 2020.1
 
 **Alunos:**
- - Lucas de Lima Martins de Souza.
- - Allef Brenno Gomes de Lima.
+ - **Lucas de Lima Martins de Souza - 20170061294**
+ - **Allef Brenno Gomes de Lima - 20160121380**
 ___
 <h2 align="center">Triângulos gerados por meio de algoritmo de rasterização do Ponto Médio</h2>
 
