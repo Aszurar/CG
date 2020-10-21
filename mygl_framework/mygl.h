@@ -23,9 +23,8 @@ void MyGlDraw(void);
 
 void PutPixel(int x, int y, struct RGBA color);
 int CheckLine(struct Point pontoA,struct Point pontoB);
-void DrawLine(struct Point pontoA,struct Point pontoB, struct RGBA color);
-void DrawTriangle(struct Point pontoA, struct Point pontoB, struct Point pontoC, struct RGBA color);
-
+void DrawLine(struct Point pontoA,struct Point pontoB, struct RGBA color1, struct RGBA color2);
+void DrawTriangle(struct Point pontoA, struct Point pontoB, struct Point pontoC, struct RGBA color1, struct RGBA color2);
 //
 // >>> Declare aqui as funções que você implementar <<<
 //
