@@ -196,9 +196,9 @@ Basta chamar o DrawnLine 3 vezes, e relacionar os 3 pontos(vértices do triãngu
 ## :seedling: Resultados:
 - Triângulo com a Interpolação Linear de Cores:
 - Vértices escolhidos:
- - A(100, 100)
- - B(200, 300)
- - C(300, 100)
+ - 	A(100, 100)
+ - 	B(200, 300)
+ - 	C(300, 100)
 <img src="https://i.imgur.com/0gv2KUx.png">
 
 - Triângulo Escaleno:
