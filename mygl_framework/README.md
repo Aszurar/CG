@@ -226,17 +226,17 @@ ___
  	- B(200, 300)
  	- C(457, 465)
 <img src="https://i.imgur.com/LC74mJs.png">
+
 ___
 
 **Segue exemplos com a Interpolação Linear de Cores realizada com sucesso:**
-
-___
 
 - Vértices escolhidos:
  	- A(100, 200)
  	- B(200, 400)
  	- C(350, 350)
 <img src="https://i.imgur.com/d9u1nRm.png">
+
 ___
 
 - Vértices escolhidos:
