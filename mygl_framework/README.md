@@ -157,6 +157,7 @@ No 4º Octante os valores das coordenadas estariam espelhando os do modelo do Al
 Portanto, para construir o Algoritmo, foi necessário implementar as modificações do 1º ao 4º quadrante, resolvendo assim por meio da simetria entre os demais quadrantes. 
 
 **A Interpolação Linear de Cores**
+
 Não foi possível realizar a interpolação Linear das cores totalmente efetiva. Na lógica utilizada, há o funcionamento somente com a entrada de vértices de triângulos que não possuam coordenadas tão distantes umas das outras. 
 
 **Falha**: 
