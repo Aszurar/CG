@@ -196,6 +196,7 @@ Não foi possível realizar a interpolação Linear das cores totalmente efetiva
   - O Resultado dessas divisões é guardado em varíaveis que são float.
   - No entando, as cores são valores inteiros, e quando ocorre a soma entre as cores e as variáveis que guardam o resultado da divisão(que são float), essas divisiões que são valores entre 0 e 1 tornam-se 0 nessa soma final.
   - Por fim, a conversão da variável float em 0 e como as cores são declaradas com o valor 0, então a soma final será 0 = 0 + 0 configurando assim a cor preta.
+___
 
 ```c
 DrawTriangle(struct Point pontoA,struct Point pontoB, struct RGBA color);
