@@ -244,6 +244,7 @@ ___
  	- B(200, 300)
  	- C(100, 300)
 <img src="https://i.imgur.com/1oRDZz4.png">
+
 ___
 
 **Segue outros exemplos sem a Interpolação Linear de Cores:**
