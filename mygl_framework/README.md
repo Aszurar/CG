@@ -32,6 +32,7 @@ A atividade consiste em implementar algoritmos de rasterização de linhas, ness
 
 Além disso, realizar as alterações necessárias para que seja possível rasterizar retas em qualquer direção/octante, já que no Algoritmo do Ponto Médio seria focado somente no 1º Octante.
 
+Lucas de Lima foi responsável pelas funções Putpixel(), pela Interpolação de Cores e também  ajudou um pouco na DrawnLine(). Allef foi responsável pela maior parte da DrawnLine() e pela DrawTriangle(). Apesar dessa separação entre o dever de cada um, todo trabalho foi feito em conjunto, não hcegou a ter alguma parte em que um não tentasse ajudar o outro.
 ___
 ## :interrobang: Estratégias
 É utilizado structs para definição das cores RGBA e dos pontos.
