@@ -33,19 +33,19 @@ A atividade consiste realizar 4 exercícios com objetivo de praticar a teoria da
 
  * **Exercício 1:**
 Modificar a matriz Model de forma que a imagem gerada pelo programa fique igual ao a Figura 5(da especificação) que é essa abaixo:
-  <img src="https://i.imgur.com/8g0id3K.png" width="200px">
+  <img src="https://i.imgur.com/8g0id3K.png" width="400px">
 
 
  * **Exercício 2:**
 Modificar a matriz Model de forma que a imagem gerada pelo programa fique como a da Figura 6(da especificação) que é essa figura abaixo:.
-  <img src="https://i.imgur.com/vNQDegl.png" width="200px"> 
+  <img src="https://i.imgur.com/vNQDegl.png" width="400px"> 
   
 
 ___
 ## :interrobang: Estratégias
 * **Exercício 1:**
   - No caso, os valores alterados foram somente 2 na matriz Model, foram trocados valores Sx e Sy da formula abaixo:
-    <img src="https://i.imgur.com/pjEZKNB.png" width="200px">
+    <img src="https://i.imgur.com/pjEZKNB.png" width="250px">
   - Como temos que os Fatores de escala em (x, y, z) = (1/3, 3/2, 1). 
   - Então trocamos Sx que era 1.0f por 0.33f e Sy que era 1.0f para 1.5f na matriz Model.
   - Assim, a matriz model no código ficará igual a abaixo para gerar uma imagem igual a da Figura 5.
@@ -57,13 +57,14 @@ ___
                              0.0f, 0.0f, 0.0f, 1.0f};
     ```
   - Resultado:
+  - 
     <img src="https://i.imgur.com/1e0lMHN.png" width="800px">
 ___
 
 * **Exercício 2:** 
   - A modificação feita foi a partir da formula abaixo:
    
-    <img src="https://i.imgur.com/e7orOR4.png" width="100px">
+    <img src="https://i.imgur.com/e7orOR4.png" width="250px">
   - Como temos que os Fatores de escala em (x, y, z) = (1, 0, 0). 
   - Então trocamos o valor dx para 1.0f 
   - A matriz utilizada para conseguir gerar uma imagem igual a Figura 6, foi a abaixo: 
@@ -75,6 +76,7 @@ ___
                              1.0f, 0.0f, 0.0f, 1.0f};
     ``` 
   - Resultado:
+   
       <img src="https://i.imgur.com/M3aVISq.png" width="800px">
   
 
