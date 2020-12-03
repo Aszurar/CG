@@ -35,12 +35,24 @@ A atividade consiste realizar 4 exercícios com objetivo de praticar a teoria da
 Modificar a matriz Model de forma que a imagem gerada pelo programa fique igual ao a Figura 5(da especificação) que é essa abaixo:
   <img src="https://i.imgur.com/8g0id3K.png" width="400px">
 
-
+___
  * **Exercício 2:**
 Modificar a matriz Model de forma que a imagem gerada pelo programa fique como a da Figura 6(da especificação) que é essa figura abaixo:.
   <img src="https://i.imgur.com/vNQDegl.png" width="400px"> 
-  
 
+___
+  * **Exercício 3:**
+Modificar a matriz MP projection de forma que a imagem gerada pelo programa fique como a da Figura 7(da especificação):
+<img src="https://i.imgur.com/20yXvNr.png" width="400px">
+A matriz de projeção MP projection a ser utilizada é a que estudamos em aula e que considera a câmera na origem do seu sistema de coordenadas:
+  <img src="https://i.imgur.com/QV52lKH.png" width="200px">
+
+    onde **d** é a distância do centro de projeção até a origem do sistema de coordenadas da câmera.
+___   
+* **Exercício 4:**
+ Neste exercício os alunos deverão modificar a matriz MView de forma que a imagem gerada pelo
+programa fique como o da Figura 8:
+  <img src="https://i.imgur.com/gvNVKY5.png">
 ___
 ## :interrobang: Estratégias
 * **Exercício 1:**
@@ -78,8 +90,30 @@ ___
   - Resultado:
    
       <img src="https://i.imgur.com/M3aVISq.png" width="800px">
+___
+* **Exercícios 3:**
+- Utilizamos a matriz mencionada no exercício, que é a matriz abaixo:
+  <img src="https://i.imgur.com/QV52lKH.png" width="200px"> 
+- A partir disso, substituimos d por 1/8 que é o parâmetro informado. Assim, a matriz Projection no código se torna assim:
+  ```c
+    float proj_array[16] = {1.0f, 0.0f, 0.0f, 0.0f, 
+                            0.0f, 1.0f, 0.0f, 0.0f, 
+                            0.0f, 0.0f, 1.0f, -8.0f, 
+                            0.0f, 0.0f, 0.125, 0.0f};
+  ```
+- Resultado:
+  <img src="https://i.imgur.com/71gBz7A.png" width="800px">
+  ___
+* **Exercícios 4:** 
+  - Para realização desse exercício, é seguido os passos das fórmulas abaixo para descobrir as coordeadas x, y e z do espaço da Câmera:
+  <img src="https://i.imgur.com/NTlUJz6.png" width="800px"> 
+  - Com isso, temos que a Matriz Bt(ou de Rotação) é igual a:
+  <img src="https://i.imgur.com/bjJAOaQ.png" width="200px">
+  - E a matriz de translação T é igual a:
+  <img src="https://i.imgur.com/iCnpWiu.png" width="200px"> 
   
-
+  - Resultado:
+   
 ## :seedling: Requisitos Mínimos - Instalação das bibliotecas do OpenGL e Configurações:
 - Atualização das listas de pacotes dos repositórios para obter informações sobre as versões mais recentes dos pacotes e suas dependencias
  ```c
