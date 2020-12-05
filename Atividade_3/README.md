@@ -28,8 +28,8 @@ ___
 
 ## :information_source: Sobre
 
-A atividade consiste realizar 4 exercícios com objetivo de praticar a teoria das Matrizes Model, View e e Projection por meio da alteração do conteúdo dessas matrizes em cada exercício. Além disso, há mais um exercício com uma transformações livres, escolhidas pelos alunos para gerar uma cena diferente dos demais.
-
+- A atividade consiste realizar 4 exercícios com objetivo de praticar a teoria das Matrizes Model, View e e Projection por meio da alteração do conteúdo dessas matrizes em cada exercício. Além disso, há mais um exercício com uma transformações livres, escolhidas pelos alunos para gerar uma cena diferente dos demais. 
+- O Exercício 1 foi feito por Lucas de Lima, o Exercício 2 por Allef, já os Exercícios 3 e 4 foram feitos em conjunto.
 
  * **Exercício 1:**
 Modificar a matriz Model de forma que a imagem gerada pelo programa fique igual ao a Figura 5(da especificação) que é essa abaixo:
@@ -113,14 +113,17 @@ ___
   ___
 * **Exercícios 4:** 
   - Para realização desse exercício, é seguido os passos das fórmulas abaixo para descobrir as coordeadas x, y e z do espaço da Câmera:
-  <img src="https://i.imgur.com/NTlUJz6.png" width="800px"> 
+   
+    <img src="https://i.imgur.com/NTlUJz6.png" width="500px"> 
   - Com isso, temos que a Matriz Bt(ou de Rotação) é igual a:
-  <img src="https://i.imgur.com/bjJAOaQ.png" width="200px">
+    <img src="https://i.imgur.com/bjJAOaQ.png" width="200px">
+
   - E a matriz de translação T é igual a:
    
     <img src="https://i.imgur.com/iCnpWiu.png" width="200px"> 
   
   - Resultado:
+   
     <img src="https://i.imgur.com/d7u8uF5.png" width="800px">
   
   - Para encontrar a matriz Bt, ou seja, achar as coordenadas do espaço da Câmera, a realização dos calculos entre os vetores e matrizes, foi utilizado a função **create_matrix_bt** da biblioteca **MatrixLibrary**.
