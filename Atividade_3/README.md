@@ -33,30 +33,37 @@ A atividade consiste realizar 4 exercícios com objetivo de praticar a teoria da
 
  * **Exercício 1:**
 Modificar a matriz Model de forma que a imagem gerada pelo programa fique igual ao a Figura 5(da especificação) que é essa abaixo:
+
   <img src="https://i.imgur.com/8g0id3K.png" width="400px">
 
 ___
  * **Exercício 2:**
-Modificar a matriz Model de forma que a imagem gerada pelo programa fique como a da Figura 6(da especificação) que é essa figura abaixo:.
+Modificar a matriz Model de forma que a imagem gerada pelo programa fique como a da Figura 6(da especificação) que é essa figura abaixo:
+
   <img src="https://i.imgur.com/vNQDegl.png" width="400px"> 
 
 ___
   * **Exercício 3:**
 Modificar a matriz MP projection de forma que a imagem gerada pelo programa fique como a da Figura 7(da especificação):
-<img src="https://i.imgur.com/20yXvNr.png" width="400px">
-A matriz de projeção MP projection a ser utilizada é a que estudamos em aula e que considera a câmera na origem do seu sistema de coordenadas:
-  <img src="https://i.imgur.com/QV52lKH.png" width="200px">
 
-    onde **d** é a distância do centro de projeção até a origem do sistema de coordenadas da câmera.
+<img src="https://i.imgur.com/20yXvNr.png" width="400px">
+
+A matriz de projeção MP projection a ser utilizada é a que estudamos em aula e que considera a câmera na origem do seu sistema de coordenadas:
+
+  <img src="https://i.imgur.com/QV52lKH.png" width="200px">
+  
+  onde **d** é a distância do centro de projeção até a origem do sistema de coordenadas da câmera.
 ___   
 * **Exercício 4:**
  Neste exercício os alunos deverão modificar a matriz MView de forma que a imagem gerada pelo
 programa fique como o da Figura 8:
+
   <img src="https://i.imgur.com/gvNVKY5.png">
 ___
 ## :interrobang: Estratégias
 * **Exercício 1:**
   - No caso, os valores alterados foram somente 2 na matriz Model, foram trocados valores Sx e Sy da formula abaixo:
+  - 
     <img src="https://i.imgur.com/pjEZKNB.png" width="250px">
   - Como temos que os Fatores de escala em (x, y, z) = (1/3, 3/2, 1). 
   - Então trocamos Sx que era 1.0f por 0.33f e Sy que era 1.0f para 1.5f na matriz Model.
