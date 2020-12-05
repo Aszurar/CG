@@ -11,6 +11,7 @@
  * alterados.
  ****************************************************************************/
 #include "main.h"
+#include "MatrixLibrary.h"
 
 #define IMAGE_WIDTH 512 // Largura da janela OpenGL em pixels.
 #define IMAGE_HEIGHT 512 // Altura da janela OpenGL em pixels.
@@ -74,6 +75,24 @@ void Display(void) {
 
     // Matriz View ////////////////////////////////////////////////////////////
     // You will have to change the contents of this matrix for the exercises
+    
+    float vector_d[3] = {0.1f, -0.1f, -1.1f};
+    float vector_up[3] = {0.0f, 1.0f, 0.0f};
+    float vector_p[3] = {-0.1f, 0.1f, 0.1f};
+    
+    float bt_array[16];
+    
+    create_matrix_bt(vector_d, vector_up, bt_array);
+
+    glm::mat4 b_t = glm::make_mat4(bt_array);
+
+    float t_array[16] = {1.00f, 0.00f, 0.00f, 0.00f,
+                         0.00f, 1.00f, 0.00f, 0.00f,
+                         0.00f, 0.00f, 1.00f, 0.00f,
+                         -vector_p[0], -vector_p[1], -vector_p[2], 1.00f};
+
+    glm::mat4 t = glm::make_mat4(t_array);
+
     float view_array[16] = {1.0f, 0.0f, 0.0f, 0.0f, 
                             0.0f, 1.0f, 0.0f, 0.0f, 
                             0.0f, 0.0f, 1.0f, 0.0f, 
@@ -86,7 +105,7 @@ void Display(void) {
     float proj_array[16] = {1.0f, 0.0f, 0.0f, 0.0f, 
                             0.0f, 1.0f, 0.0f, 0.0f, 
                             0.0f, 0.0f, 1.0f, -8.0f, 
-                            0.0f, 0.0f, 0.125, 0.0f};
+                            0.0f, 0.0f, 0.125f, 0.0f};
 
     glm::mat4 proj_mat = glm::make_mat4(proj_array);
 
@@ -99,7 +118,8 @@ void Display(void) {
     glm::mat4 flip_z_mat = glm::make_mat4(flip_z_array);
 
     // Matriz ModelViewProjection /////////////////////////////////////////////
-    glm::mat4 model_view_proj_mat = flip_z_mat * proj_mat * view_mat * model_mat;
+    // glm::mat4 model_view_proj_mat = flip_z_mat * proj_mat * view_mat * model_mat;
+    glm::mat4 model_view_proj_mat = flip_z_mat * proj_mat * (b_t * t) * model_mat;
 
     unsigned int transformLoc;
     GL_CHECK(transformLoc = glGetUniformLocation(shader_program, "transform"));

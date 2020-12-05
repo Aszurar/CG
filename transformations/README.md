@@ -110,10 +110,20 @@ ___
   - Com isso, temos que a Matriz Bt(ou de Rotação) é igual a:
   <img src="https://i.imgur.com/bjJAOaQ.png" width="200px">
   - E a matriz de translação T é igual a:
-  <img src="https://i.imgur.com/iCnpWiu.png" width="200px"> 
+   
+    <img src="https://i.imgur.com/iCnpWiu.png" width="200px"> 
   
   - Resultado:
-   
+    <img src="https://i.imgur.com/d7u8uF5.png" width="800px">
+  
+  - Para encontrar a matriz Bt, ou seja, achar as coordenadas do espaço da Câmera, a realização dos calculos entre os vetores e matrizes, foi utilizado a função **create_matrix_bt** da biblioteca **MatrixLibrary**.
+  Nessa função, possui 3 métodos:
+      - **vetorial**: Realiza o cálculo do produto vetorial
+      - **calculate_zc**: Realiza o cálculo para achar as coordenadas Z da Câmera.
+      - **calculate_xc**: Realiza o cálculo para achar as coordenadas X e Y da Câmera, por isso é chamada 2 vezes. 
+  - Além disso, nas funções **calculate_zc**  e **calculate_xc** é utilizado outra função chamada **module** para calcular o módulo dos vetores.
+  - Já a matriz de Translação T, é encontrada a partir do do vetor p(px, py e pz) que é dado na questão e utilizando a fórmula mencionada acima.
+___ 
 ## :seedling: Requisitos Mínimos - Instalação das bibliotecas do OpenGL e Configurações:
 - Atualização das listas de pacotes dos repositórios para obter informações sobre as versões mais recentes dos pacotes e suas dependencias
  ```c
