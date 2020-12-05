@@ -22,7 +22,7 @@ ___
 
 ___
 
-<div align="center" ><img src="https://media.giphy.com/media/RiqD20doJPMd1PLBvE/giphy.gif" width="650"></div>
+<div align="center" ><img src="https://i.imgur.com/yBG9noP.gif" width="650"></div>
 
 ___
 
@@ -63,8 +63,9 @@ ___
 ## :interrobang: Estratégias
 * **Exercício 1:**
   - No caso, os valores alterados foram somente 2 na matriz Model, foram trocados valores Sx e Sy da formula abaixo:
-  - 
+   
     <img src="https://i.imgur.com/pjEZKNB.png" width="250px">
+
   - Como temos que os Fatores de escala em (x, y, z) = (1/3, 3/2, 1). 
   - Então trocamos Sx que era 1.0f por 0.33f e Sy que era 1.0f para 1.5f na matriz Model.
   - Assim, a matriz model no código ficará igual a abaixo para gerar uma imagem igual a da Figura 5.
@@ -109,6 +110,7 @@ ___
                             0.0f, 0.0f, 0.125, 0.0f};
   ```
 - Resultado:
+ 
   <img src="https://i.imgur.com/71gBz7A.png" width="800px">
   ___
 * **Exercícios 4:** 
@@ -116,6 +118,7 @@ ___
    
     <img src="https://i.imgur.com/NTlUJz6.png" width="500px"> 
   - Com isso, temos que a Matriz Bt(ou de Rotação) é igual a:
+   
     <img src="https://i.imgur.com/bjJAOaQ.png" width="200px">
 
   - E a matriz de translação T é igual a:
