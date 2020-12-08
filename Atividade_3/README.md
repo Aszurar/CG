@@ -12,9 +12,9 @@ ___
 
 
 <h3 align="center">
-  <a href="#information_source-objetivo">Objetivo</a>&nbsp;|&nbsp;
-  <a href="#interrobang-estratégias">Estratégias</a>&nbsp;|&nbsp;
-  <a href="#seedling-resultados">Resultadoss</a>&nbsp;|&nbsp;
+  <a href="#information_source-sobre">Sobre</a>&nbsp;|&nbsp;
+  <a href="#interrobang-soluções">Soluções</a>&nbsp;|&nbsp;
+  <a href="#seedling-requisitos-mínimos">Requisitos</a>&nbsp;|&nbsp;
   <a href="#package-como-baixar-o-projeto">Baixar</a> |&nbsp;
   <a href="#rocket-compilando-e-executando">Execução</a>&nbsp;|&nbsp;
 
@@ -60,7 +60,7 @@ programa fique como o da Figura 8:
 
   <img src="https://i.imgur.com/gvNVKY5.png">
 ___
-## :interrobang: Estratégias
+## :interrobang: Soluções:
 * **Exercício 1:**
   - No caso, os valores alterados foram somente 2 na matriz Model, foram trocados valores Sx e Sy da formula abaixo:
    
@@ -137,7 +137,42 @@ ___
   - Além disso, nas funções **calculate_zc**  e **calculate_xc** é utilizado outra função chamada **module** para calcular o módulo dos vetores.
   - Já a matriz de Translação T, é encontrada a partir do do vetor p(px, py e pz) que é dado na questão e utilizando a fórmula mencionada acima.
 ___ 
-## :seedling: Requisitos Mínimos - Instalação das bibliotecas do OpenGL e Configurações:
+* **Exercícios 5:** 
+  * A 1º transformação realizada foi na Matriz Model, em que negativamos o y para deixar os triângulos invertidos. Após isso, transladamos os triângulos em 1 unidade no eixo y e no eixo x. 
+     ```c
+      float model_array[16] = {1.0f, 0.0f, 0.0f, 0.0f, 
+                               0.0f, -1.0f, 0.0f, 0.0f, 
+                               0.0f, 0.0f, 1.0f, 0.0f, 
+                               1.0f, 1.0f, 0.0f, 1.0f};
+     ```
+  * A partir disso, alteramos a posição da câmera com a finalidade de centralizar os triângulos e vê-los de frente(vetor p) com uma leve alteração no y.
+     ```c
+      float vector_p[3] = {1.0f, 0.1f, 2.5f};
+     ``` 
+  * Assim recalculamos o view direction(vetor d).
+    ```c
+      float vector_d[3] = {0.0f, 0.9f, -2.5f};
+    ``` 
+  * Permanecemos com o vetor up no y igual a 1.
+    ```c
+      float vector_up[3] = {0.0f, 1.0f, 0.0f};
+    ``` 
+  * Além disso, alteramos a Matriz Projection para que a imagem ficasse maior na tela:
+    ```c
+       float proj_array[16] = {1.0f, 0.0f, 0.0f, 0.0f, 
+                               0.0f, 1.0f, 0.0f, 0.0f, 
+                               0.0f, 0.0f, 1.0f, -0.5f, 
+                               0.0f, 0.0f, 2.0f, 0.0f};
+    ```
+  * Por fim, a Matriz View resultará em uma nova matriz, já que ela depende dos valores anteriores citados acima( Matriz View = Matriz de Rotação * Matriz de Translação).
+  * Resultado:
+
+    <img src="https://i.imgur.com/Qquldok.png" width="800px">
+
+
+## :seedling: Requisitos Mínimos:
+### Instalação das bibliotecas do OpenGL e Configurações:
+ 
 - Atualização das listas de pacotes dos repositórios para obter informações sobre as versões mais recentes dos pacotes e suas dependencias
  ```c
  sudo apt-get update;
